@@ -1,5 +1,6 @@
 #ifndef GAME_H
 #define GAME_H
+#include <vector>
 #include "SDL.h"
 #include "controller.h"
 #include "renderer.h"
@@ -15,7 +16,6 @@ private:
     ManualPaddle p1;
     AutoPaddle p2;
     Ball b;
-    // void update();
 };
 
 #endif

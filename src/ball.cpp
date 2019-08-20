@@ -5,8 +5,9 @@ Ball::Ball(int x, int y, int w, int h, int left, int right, int top, int bottom)
     w(w), h(h), 
     left(left), right(right), top(top), bottom(bottom),
     engine(dev()),
-    random_xvel(-6, 6), random_yvel(-3, 3) {
-        reset();
+    random_xvel(-6, 6), random_yvel(-3, 3) 
+    { 
+        reset(); 
     }
 
 void Ball::move(Paddle &leftPaddle, Paddle &rightPaddle) {
@@ -39,7 +40,7 @@ void Ball::reset() {
     while ( yvel == 0 ) yvel = random_yvel(engine);
 }
 
-bool Ball::checkCollision(Paddle &paddle) {
+bool Ball::checkCollision(Paddle &paddle) const {
     // if any of the sides of paddle are outside of ball
     if ((y + h) < paddle.y) return false;
     if (y > paddle.y + paddle.h) return false;

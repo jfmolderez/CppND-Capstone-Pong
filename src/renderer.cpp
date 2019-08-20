@@ -28,7 +28,7 @@ Renderer::Renderer(const std::size_t kScreenWidth, const std::size_t kScreenHeig
 }
 
 Renderer::~Renderer() { 
-    std::cout << "Destructor ~Renderer called !!!" << std::endl;
+    // std::cout << "Destructor ~Renderer called !!!" << std::endl;
     SDL_DestroyWindow(sdl_window);
     SDL_Quit();
 }

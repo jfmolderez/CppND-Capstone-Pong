@@ -1,7 +1,6 @@
 #ifndef RENDERER_H
 #define RENDERER_H
 #include "SDL.h"
-#include "SDL_ttf.h"
 #include "paddle.h"
 #include "ball.h"
 #include <sstream>

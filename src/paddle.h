@@ -1,5 +1,8 @@
 #ifndef PADDLE_H
 #define PADDLE_H
+#include <vector>
+
+class Ball;
 
 class Paddle {
 public:
@@ -14,14 +17,21 @@ protected:
 };
 
 class AutoPaddle : public Paddle {
-    public:
+public:
     AutoPaddle(int, int, int, int, int, int );
-    void follow( const int ) ;
+    void follow( const Ball & b) ;
 };
 
 class ManualPaddle : public Paddle {
-    public:
+public:
     ManualPaddle(int, int, int, int, int, int );
 };
 
+ 
+
 #endif
+
+
+
+
+

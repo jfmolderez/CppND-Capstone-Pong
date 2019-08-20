@@ -8,6 +8,7 @@ class Ball {
 public:
     Ball(int x, int y, int w, int h, int left, int right, int top, int bottom);
     void move(Paddle &leftPaddle, Paddle &rightPaddle) ;
+    bool checkCollision(Paddle &paddle) const;
     int x, y, h, w;
 
 private:
@@ -19,6 +20,5 @@ private:
     std::uniform_int_distribution<int> random_xvel;
     std::uniform_int_distribution<int> random_yvel;
     void reset();
-    bool checkCollision(Paddle &paddle);
 };
 #endif
