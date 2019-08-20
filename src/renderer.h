@@ -3,14 +3,17 @@
 #include "SDL.h"
 #include "paddle.h"
 #include "ball.h"
-#include <sstream>
+#include <cstdio>
 
 
 class Renderer {
 public:
+    
     Renderer(const std::size_t kScreenWidth, const std::size_t kScreenHeight);
-    ~Renderer();
-    void render(const Paddle p1, const Paddle p2, const Ball & b);
+
+    ~Renderer();  // destructor
+
+    void render(const Paddle & p1, const Paddle & p2, const Ball & b);
     
     void updateWindowTitle(const int fps, const Paddle p1, const Paddle p2);
 
