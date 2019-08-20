@@ -34,7 +34,7 @@ All members are specified either public, protected or private. Check for example
 **The project makes use of references in function declarations.**<br>
 Check for example render method (class Renderer) or the method follow (class AutoPaddle in paddle.cpp).<br>
 **The project uses scope / Resource Acquisition Is Initialization (RAII) where appropriate.**<br>
-Implicit call of the destructor for Renderer, see main.cpp .
+Implicit call of the destructor for Renderer, see main.cpp .<br>
 **The project uses multithreading.**<br>
 An observer thread is created (in Game::run) to send output to the terminal while the game is running and to output the final results. <br>
 
