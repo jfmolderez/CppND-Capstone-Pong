@@ -1,5 +1,5 @@
 This project has been developed in August 2019 as Capstone Project for the Udacity C++ Nanodegree.
-The code for this repo was inspired by [this](https://www.youtube.com/watch?v=ZVk7N8eUjsc) and by [this] (https://github.com/udacity/CppND-Capstone-Snake-Game.git)
+The code for this repo was inspired by [this series of tutorials](https://www.youtube.com/watch?v=ZVk7N8eUjsc) and by [the Snake Game](https://github.com/udacity/CppND-Capstone-Snake-Game.git)
 
 <img src ="pong_game.png">
 
